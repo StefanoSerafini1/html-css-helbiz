@@ -1,0 +1,88 @@
+body {
+  font-family: 'Montserrat', sans-serif;
+}
+ul li {
+  list-style: none;
+}
+ul li a {
+  text-decoration: none;
+  color: black;
+}
+.centered-text {
+  text-align: center;
+}
+
+/* barra parte in alto */
+header .barra {
+  margin-top: 15px;
+  margin-left: 150px;
+  margin-bottom: 15px;
+}
+.barra img {
+  height: 12px;
+}
+
+header ul {
+  text-align: right;
+}
+header ul li {
+  padding-right: 16px;
+  font-size: 10px;
+  display: inline-block;
+}
+.menu .ita {
+  border-left: 1px solid black;
+  padding-right: 9px;
+  padding-left: 9px;
+  border-right: 1px solid black;
+}
+
+/* inizio parte con foto strada*/
+.strada {
+ background-image: url(./img/hero-bg.jpg);
+ background-repeat: no-repeat;
+ background-size: cover;
+ height: 500px;
+ position: relative;
+}
+header .testo {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+}
+header p {
+  margin: 15px;
+  font-size: 12px;
+}
+
+/* inizio parte prodotti coppia */
+.prodotti{
+  padding:10px; 
+}
+main .prodotti img {
+  height: 400px;
+}
+.segway,
+.bike {
+  background-color: #f3f2f2;
+}
+.prodotti .centered-text {
+  margin: 40px;
+}
+.prodotti p {
+  margin: 16px;
+}
+/* misura immagine per smartphone */
+@media screen and (max-width: 769px) {
+  main .prodotti img {
+    height: 360px;
+  }
+}
+/* misura immagini per tablet */
+@media screen and (min-width:768px) and (max-width: 992px){
+  main .prodotti img {
+    height: 270px;
+  }
+}
